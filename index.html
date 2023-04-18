@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=EB+Garamond&family=Gloock&family=Great+Vibes&family=Lobster+Two&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title></title>
+</head>
+<body>
+    
+    <section class="square">
+        <button class="tablink" onclick="openPage('def', this, 'rgb(20, 161, 95)')"id="defaultOpen">Definiție</button>
+        <button class="tablink" onclick="openPage('cond', this, 'rgb(14, 171, 61)')" >Condiții</button>
+        <button class="tablink" onclick="openPage('propr', this, 'rgb(6, 190, 110)')">Proprietăți</button>
+        <button class="tablink" onclick="openPage('teor', this, 'rgb(55, 137, 14)')">Teoremă</button>
+
+        <div id="def" class="tabcontent">
+            <p>Este bine cunoscut faptul că pentru orice număr complex nenul a există a <sup>-1</sup>, astfel încât  a∙a<sup>-1</sup> = a<sup>-1</sup>∙a = 1.</p>
+            <p>În intenţia de a găsi o matrice B pentru matricea A, astfel încât A ⋅ B = B ⋅ A = I, se introduce următoarea noţiune:</p>
+            <dd>O matrice pătratică A se numește inversabilă dacă există o matrice pătratică B, astfel încât AB = BA =I.</dd>
+            <dd>Matricea B se numește inversa matricei A și se notează A<sup>-1</sup> .</dd>
+        </div>
+        <div id="cond" class="tabcontent">
+            <br><br>
+                <p>1. Matricele B și I sunt de același ordin ca și A.</p> <br>
+                <p>2. Din relațiile A∙A<sup>-1</sup> = A<sup>-1</sup>∙A = I  rezultă că A<sup>-1</sup> de asemenea este inversabilă și că inversa ei este A, adică (A<sup>-1</sup>)<sup>-1</sup> = A.</p>
+        </div>
+        <div id="propr" class="tabcontent">
+          <br><br>
+                <p>1. Inversa unei matrice este unică.</p><br>
+                <p>2. Dacă matricile A<sub>1</sub>, A<sub>2</sub>, A<sub>3</sub>, ..., A<sub>k</sub> &#8712; M<sub>n</sub> (C) sunt inversabile, atunci matricea <br> A<sub>1</sub> &#8729; A<sub>2</sub>&#8729; A<sub>3</sub> &#8729; ... &#8729; A<sub>k</sub> este inversabilă și (A<sub>1</sub> &#8729; A<sub>2</sub>&#8729; A<sub>3</sub> &#8729; ... &#8729; A<sub>k</sub>) <sup>-1</sup> =  A<sub>k</sub><sup>-1</sup> &#8729; A<sub>k-1</sub><sup>-1</sup> &#8729; ... &#8729; A<sub>2</sub><sup>-1</sup> &#8729; A<sub>1</sub><sup>-1</sup></p>
+        </div>
+        <div id="teor" class="tabcontent">
+            <p>Utiliând determinanții, complemenții algebrici ai elementelor unei matrice pătratice, vom prezenta un criteriu de inversabilitate a matricei și o metodă de calcul al inversei unei matrice.</p>
+            <h3>TEOREMĂ</h3>
+            <p>Matricea pătratică este inversabilă dacă și numai dacă determinantul ei este diferit de zero.</p>
+            <h1>|A| ≠ 0</h1>
+        </div>
+   </section><script src="java.js"></script>
+
+   <section class="formula">
+    <div class="explicatie">
+      <h2>Formula generală</h2>
+   </div><br>
+    <img src="images\1.png" alt=""><br><br><br>
+    <div class="explicatie">
+       A<sub>ij</sub> = (-1)<sup>i+j</sup> ∙ 
+       <div class="tooltip">M
+        <span class="tooltiptext">Minor complementar</span>
+      </div>
+    </div>
+   </section>
+
+   <section class="exemple">
+    <h1>Exemple de exerciții</h1>
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <img class="ImgThumbnail"  src="images\2.png"  style="width:100%;max-width:300px">
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <img class="ImgThumbnail" src="images\3.png"  style="width:100%;max-width:300px">
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <img class="ImgThumbnail" src="images\4.png"  style="width:100%;max-width:300px">
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <img class="ImgThumbnail" src="images\5.png"  style="width:100%;max-width:300px">
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <img class="ImgThumbnail" src="images\6.png"  style="width:100%;max-width:300px">
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <img class="ImgThumbnail" src="images\7.png"  style="width:100%;max-width:300px">
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <span class="close">&times;</span>
+      <img class="modalImage" id="img01" />
+      </div>
+   </section><script src="java.js"></script>
+
+   <section  class="introd">
+        <div id="navbar" class="header">
+            <p>EDUCAȚIE ONLINE FĂRĂ HOTARE 2022-2023 - Instruirea asistată de calculator la orele de matematică</p>
+            <p>Liceul Teoretic „Dante Alighieri”  Chișinău  Moldova</p><br>
+            <h2>MATRICEA INVERSABILĂ</h2>
+          </div>
+          
+    </section><script src="java.js"></script>
+
+</body>
+</html>
